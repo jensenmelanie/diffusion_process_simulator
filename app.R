@@ -176,6 +176,4 @@ server <- function(input,output){
 	
 } # end of the server
 
-
-
-
+shinyApp(ui = ui, server = server)
