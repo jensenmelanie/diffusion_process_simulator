@@ -35,12 +35,18 @@ where the model parameters have the following interpretation:
 By setting <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\nu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;\nu" title="\large \nu" /></a> = 0, then a centered (around 0) Ornstein-Uhlenbeck process can be simulated.
 
 ### Switching Ornstein Uhlenbeck with a time trend
-Assume there are k switch points,<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_i" title="\large \tau_i" /></a>, for i = 0, 1, ..., k+1, where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_0" title="\large \tau_0" /></a>
-= 0 and <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_{k&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_{k&plus;1}" title="\large \tau_{k+1}" /></a> = T (final time).
+Assume there are k switch points,<a html="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_i" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_i" title="\large \tau_i" /></a>, for i = 0, 1, ..., k+1, where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_0" title="\large \tau_0" /></a>
+= 0 and <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\tau_{k&plus;1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;\tau_{k&plus;1}" title="\large \tau_{k+1}" /></a> = T. 
 We define a switching Ornstein Uhlenbeck with a time trend to satisfy the following SDE:
 
 <p align="center">
 <img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;d&space;X_t&space;=&space;-&space;\kappa_i\big(X_t&space;-&space;\nu_i&space;(t&space;-&space;\tau_{i-1})&space;&plus;&space;X_{\tau_{i-1}}\big)&space;&&space;dt&space;&plus;&space;\sqrt{2D_i}dW_t&space;\quad&space;\text{for&space;}&space;\tau_{i-1}&space;<&space;t&space;\leq&space;\tau_i\\&space;X_0&space;&&space;=&space;0&space;\end{align*}" title="\begin{align*} d X_t = - \kappa_i\big(X_t - \nu_i (t - \tau_{i-1}) + X_{\tau_{i-1}}\big) & dt + \sqrt{2D_i}dW_t \quad \text{for } \tau_{i-1} < t \leq \tau_i\\ X_0 & = 0 \end{align*}" />
 </p>
+where the parameters can vary from state to state.
 
+
+## Restriction on Parameters
+
+- D > 0 
+- <img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{120}&space;\large&space;\kappa" title="\large \kappa" /> > 0
 
