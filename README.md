@@ -2,6 +2,7 @@
 
 Simulates a variety of 1D and 2D diffusion processes for user chosen parameter values. See below for a description of the diffusion processes.  
 
+## Running the app
 To run this app through R, input the following commands into your R console
 
 library(shiny)
