@@ -10,7 +10,7 @@ library(shiny)
 runGitHub("diffusion_process_simulator", "jensenmelanie")
 
 
-## Diffusion Process
+## Diffusion Processes
 While there is a variety of phenoma that can be modeled the following diffusion processes, the following processes are introduced in terms of modeling the position of a microparticle. We assume that the process is observed for time <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;t&space;\in&space;[0,T]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\large&space;t&space;\in&space;[0,T]" title="\large t \in [0,T]" /></a>
 
 ### Brownian Motion/Pure Diffusion 
