@@ -30,7 +30,7 @@ where the model parameters have the following interpretation:
 
 - <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\kappa" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;\kappa" title="\large \kappa" /></a>: how "strongly" the particle reacts to the random perturbations 
 - <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\nu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;\nu" title="\large \nu" /></a>: the speed of the time trend
-- D: the size of the noise due to thermal flucation 
+- D: the size of the noise due to thermal fluctuations. 
 
 By setting <a href="https://www.codecogs.com/eqnedit.php?latex=\large&space;\nu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\large&space;\nu" title="\large \nu" /></a> = 0, then a centered (around 0) Ornstein-Uhlenbeck process can be simulated.
 
